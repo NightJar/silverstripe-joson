@@ -144,11 +144,9 @@ Notes
 
 TODO:
 -----
- 1. [ ] Obviously convert example JSON into actual example!
- 2. [ ] Convert example classes into actual examples instead of being all actual production code.
- 3. [ ] Docs! I don't even know what all the config things are anymore!
- 4. [ ] Stop this sillyness of needing a class per API. Use the config better.
- 5. [ ] Probably the API List and Data stuff could be a little better (namespaces?)
- 6. [ ] Auto query relation infos from API Datas just like DataObject
- 7. [ ] Needs test suite
- 8. [ ] OMG Clean it all up!
+ 1. [x] Docs! I don't even know what all the config things are anymore!
+ 2. [ ] Stop this sillyness of needing a class per API. Use the config better.
+ 3. [ ] Probably the API List and Data stuff could be a little better (namespaces?)
+ 4. [ ] Auto query relation infos from API Datas just like DataObject
+ 5. [ ] Needs test suite
+ 6. [ ] OMG Clean it all up!
