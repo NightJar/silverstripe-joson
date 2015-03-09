@@ -21,11 +21,13 @@ Usage
    - Delete with: ???
  * Debug it with GET url param debug_api=1
  * See errors (HTML this is) via GET url param show_api_errors=1 (and =0 to disable it again, as it sets a session var)
+ 
 ###Config
 The system takes a basic config with only three options. However those options have multiple and varied complex setups of their own.
  1. **base**
  2. **auth**
  3. **endpoints**
+
 ####base
 This is the base point of all requests. The domain of your api, as such.
 This can either be a single string ()eg. `http://theapisdomain.tld/api/v1/`) which will be used under all environment settings.
@@ -37,9 +39,11 @@ YourAPI:
     dev: http://dev.apidomain.tld/testdata
     test: http://idontknow.if/anyone_ever_uses_test_as_an/environment_setting
 ```
+
 ####auth
 This option takes only a simple string. This string _must be a valid HTTP header_ in construction though.
 Eg. `"X-apiauth: 12345"`
+
 ####endpoints
 The meat of it all. Can get quite complex. Sub endpoints are a thing.
 The URL parameter is of course required, which is relative to the base specified above. However the entire endpoint can be simplified down to simply `Name: url` if all the other options are OK as default.
@@ -109,7 +113,7 @@ ArtAPI::set('User', null, array('name'=>'John Doe','admin'=>true,'password'=>fal
 //update the description on painting 24.
 ArtAPI::set('Artists.UpdateInfo', 24, [
 	'shortDesc' =>
-		'One of his most famous paintings, van Gogh's'.
+		'One of his most famous paintings, van Gogh\'s'.
 		'Cafe Terrace at Night was painted mid 1888 in France.'
 ]);
 
